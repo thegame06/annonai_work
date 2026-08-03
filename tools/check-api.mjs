@@ -21,7 +21,7 @@ if (process.argv.includes('--update') || !existsSync(SNAPSHOT)) {
   console.log('api snapshot written');
   process.exit(0);
 }
-if (readFileSync(SNAPSHOT, 'utf8') !== current) {
+if (readFileSync(SNAPSHOT, 'utf8').replaceAll('\r\n', '\n') !== current) {
   console.error('Public API changed. Review the diff, then run: npm run check:api:update');
   process.exit(1);
 }
