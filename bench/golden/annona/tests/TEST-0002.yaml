@@ -1,0 +1,7 @@
+id: TEST-0002
+kind: test
+title: Duplicate idempotency key returns the original intent
+status: passing
+verifies: [REQ-0002]
+summary: |
+  Regression test: duplicate idempotency key returns the original intent.

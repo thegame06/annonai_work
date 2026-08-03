@@ -1,0 +1,9 @@
+id: TASK-0011
+kind: task
+title: Add nightly reconciliation between reports and batches
+status: ready
+owner: bladimir
+tags: [testing]
+implements: [REQ-0011]
+touches: [CMP-0008, CMP-0005]
+summary: Compare reported settled volume against closed batch sums and alert on divergence.

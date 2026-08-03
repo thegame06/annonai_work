@@ -1,0 +1,8 @@
+id: TASK-0002
+kind: task
+title: Implement the MCP adapter package
+status: done
+owner: bladimir
+implements: [REQ-0003, REQ-0004]
+touches: [CMP-0006, CMP-0004]
+summary: Expose seven read-oriented tools over stdio, depending only on the public Workspace API.

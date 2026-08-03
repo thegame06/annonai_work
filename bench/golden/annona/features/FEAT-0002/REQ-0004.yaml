@@ -1,0 +1,8 @@
+id: REQ-0004
+kind: requirement
+title: A refund never exceeds the refundable balance
+status: accepted
+feature: FEAT-0002
+owner: bladimir
+summary: Refund amount must be <= captured minus previously refunded.
+body: The check happens inside the aggregate, in the same transaction that records the refund, so concurrent refunds cannot both pass.

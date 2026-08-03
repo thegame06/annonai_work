@@ -1,0 +1,7 @@
+id: TEST-0001
+kind: test
+title: Money arithmetic never loses cents
+status: passing
+verifies: [REQ-0001]
+summary: |
+  Regression test: money arithmetic never loses cents.

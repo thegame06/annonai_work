@@ -1,0 +1,8 @@
+id: TASK-0008
+kind: task
+title: Instrument the MCP server with caller-attributed telemetry
+status: done
+owner: bladimir
+implements: [REQ-0010]
+touches: [CMP-0006]
+summary: Capture caller, tool, task, nodes, tokens and duration for every tool invocation.

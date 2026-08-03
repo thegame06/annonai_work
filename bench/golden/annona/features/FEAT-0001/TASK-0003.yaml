@@ -1,0 +1,9 @@
+id: TASK-0003
+kind: task
+title: Enforce capture-after-authorization in the aggregate
+status: ready
+owner: bladimir
+tags: [bugfix]
+implements: [REQ-0003]
+touches: [CMP-0002]
+summary: Capture currently succeeds on a created intent; move the check into PaymentIntent.

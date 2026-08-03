@@ -1,0 +1,8 @@
+id: REQ-0015
+kind: requirement
+title: Audit entries derive from domain events
+status: accepted
+feature: FEAT-0008
+owner: bladimir
+summary: No code writes audit rows directly.
+body: The audit projector consumes the same event stream as settlement, guaranteeing the trail cannot drift from the aggregate state.

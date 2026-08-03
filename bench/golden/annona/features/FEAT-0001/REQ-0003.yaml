@@ -1,0 +1,8 @@
+id: REQ-0003
+kind: requirement
+title: Capture is only valid after authorization
+status: accepted
+feature: FEAT-0001
+owner: bladimir
+summary: Capture on a non authorized intent is rejected with a domain error.
+body: The aggregate enforces the transition; the API never checks state itself. Attempting an invalid transition raises InvalidStateTransition.

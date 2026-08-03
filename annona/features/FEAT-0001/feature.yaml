@@ -1,0 +1,9 @@
+id: FEAT-0001
+kind: feature
+title: Agent surface
+status: in_progress
+owner: bladimir
+created: 2026-07-31
+summary: Any AI agent can consume Annona knowledge without a vendor-specific integration.
+body: |
+  Three interchangeable surfaces over one command layer: CLI, MCP and generated instruction files. Switching from Claude to Codex must be a config line, never an architectural change.

@@ -1,0 +1,8 @@
+id: REQ-0001
+kind: requirement
+title: Amounts are stored in minor units as integers
+status: accepted
+feature: FEAT-0001
+owner: bladimir
+summary: Every monetary amount is an integer number of minor units plus an ISO 4217 currency code.
+body: Floating point types are forbidden for money anywhere in the system, including DTOs, database documents and the portal. Conversion to a display string happens only at the presentation edge.

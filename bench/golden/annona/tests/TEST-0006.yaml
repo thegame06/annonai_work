@@ -1,0 +1,7 @@
+id: TEST-0006
+kind: test
+title: Reported totals equal closed batch sums
+status: passing
+verifies: [REQ-0011]
+summary: |
+  Regression test: reported totals equal closed batch sums.

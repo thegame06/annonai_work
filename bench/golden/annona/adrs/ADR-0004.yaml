@@ -1,0 +1,9 @@
+id: ADR-0004
+kind: adr
+title: CQRS split between write model and projections
+status: accepted
+subject: read-model
+owner: bladimir
+decides: [REQ-0010, REQ-0006]
+summary: Decision on read-model.
+body: Reporting queries were blocking ledger writes. Separating the read model costs eventual consistency of a few seconds, which is acceptable for reporting and unacceptable for balances, so refund balance checks stay on the write model.

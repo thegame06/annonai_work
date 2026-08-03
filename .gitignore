@@ -1,0 +1,8 @@
+node_modules/
+.annona/
+CLAUDE.md
+AGENTS.md
+CODEX.md
+GEMINI.md
+bench/last-run.json
+bench/h1/last-run.json

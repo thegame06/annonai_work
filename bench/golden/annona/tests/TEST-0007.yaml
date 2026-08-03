@@ -1,0 +1,7 @@
+id: TEST-0007
+kind: test
+title: Audit trail matches aggregate state after replay
+status: passing
+verifies: [REQ-0015]
+summary: |
+  Regression test: audit trail matches aggregate state after replay.

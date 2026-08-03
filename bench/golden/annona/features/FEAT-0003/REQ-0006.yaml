@@ -1,0 +1,8 @@
+id: REQ-0006
+kind: requirement
+title: Settlement batches are deterministic
+status: accepted
+feature: FEAT-0003
+owner: bladimir
+summary: Rerunning settlement for a date produces an identical batch.
+body: Grouping is by merchant and value date, ordered by ledger entry id. No wall clock reads during projection.

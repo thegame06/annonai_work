@@ -1,0 +1,9 @@
+id: ADR-0002
+kind: adr
+title: Append-only ledger with compensating entries
+status: accepted
+subject: ledger-mutability
+owner: bladimir
+decides: [REQ-0005, REQ-0007]
+summary: Decision on ledger-mutability.
+body: Mutable ledger rows make reconciliation impossible after the fact. Append-only entries with compensations preserve history at the cost of more documents, which MongoDB handles comfortably at our volume.

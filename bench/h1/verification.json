@@ -1,0 +1,42 @@
+{
+  "harnessVerification": {
+    "negativeControl": {
+      "runner": "noop.sh",
+      "items": 5,
+      "runs": 10,
+      "holesVerified": true,
+      "armA_successPct": 0,
+      "armB_successPct": 0
+    },
+    "positiveControl": {
+      "runner": "oracle.sh",
+      "items": 4,
+      "runs": 8,
+      "holesVerified": true,
+      "successPct": 100.0
+    },
+    "conclusion": "The oracle is reachable and discriminating: an agent that does nothing scores 0%, an agent that produces correct source scores 100%. A real run therefore measures the agent, not the harness."
+  },
+  "promptCost": {
+    "TASK-0001": {
+      "armA": 79,
+      "armB": 1001
+    },
+    "TASK-0002": {
+      "armA": 77,
+      "armB": 1000
+    },
+    "TASK-0003": {
+      "armA": 78,
+      "armB": 1141
+    },
+    "TASK-0004": {
+      "armA": 72,
+      "armB": 923
+    },
+    "TASK-0006": {
+      "armA": 92,
+      "armB": 622
+    }
+  }
+}

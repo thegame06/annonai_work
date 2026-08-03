@@ -1,0 +1,9 @@
+id: REQ-0004
+kind: requirement
+title: MCP is an adapter, not part of the Core
+status: accepted
+feature: FEAT-0001
+owner: bladimir
+summary: The Core must not import or reference MCP.
+body: |
+  Enforced by the boundary checker: the mcp package depends on the public Workspace API only.

@@ -1,0 +1,10 @@
+id: TASK-0006
+kind: task
+title: Map a term definition into the runtime
+status: done
+owner: bladimir
+implements: [REQ-0006]
+touches: [CMP-0001]
+summary: |
+  A term's definition never reached the store, so every glossary entry rendered
+  empty in generated instruction files and in every compiled context.

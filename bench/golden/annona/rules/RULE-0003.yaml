@@ -1,0 +1,7 @@
+id: RULE-0003
+kind: rule
+title: MongoDB writes to one aggregate use one session
+status: active
+applies_to: [CMP-0003, CMP-0005]
+summary: A command touches exactly one aggregate.
+body: A command touches exactly one aggregate. Multi-document transactions across aggregates are forbidden; use events instead.

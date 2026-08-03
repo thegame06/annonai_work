@@ -1,0 +1,8 @@
+id: REQ-0010
+kind: requirement
+title: Reporting reads only from projections
+status: accepted
+feature: FEAT-0005
+owner: bladimir
+summary: The reporting API never queries the write model.
+body: This keeps report latency independent of transaction volume and prevents long running reads from blocking the ledger.

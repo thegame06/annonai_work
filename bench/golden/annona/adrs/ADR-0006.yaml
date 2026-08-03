@@ -1,0 +1,9 @@
+id: ADR-0006
+kind: adr
+title: Event-driven audit projection
+status: accepted
+subject: audit-source
+owner: bladimir
+decides: [REQ-0015]
+summary: Decision on audit-source.
+body: Writing audit rows alongside business writes drifts whenever a code path forgets. Projecting from the event stream makes drift structurally impossible.

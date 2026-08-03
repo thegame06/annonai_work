@@ -1,0 +1,9 @@
+id: TASK-0007
+kind: task
+title: Reject writes to a closed batch
+status: ready
+owner: bladimir
+tags: [feature]
+implements: [REQ-0007]
+touches: [CMP-0005, CMP-0003]
+summary: Add a guard so late entries route to the next open batch.

@@ -1,0 +1,173 @@
+// PUBLIC API. This file imports nothing, by rule (tools/check-boundaries.mjs).
+// That is what makes it impossible for an internal type to leak into the
+// compatibility contract. Everything reachable from here is frozen.
+//
+// Nothing is public unless it is declared or named here, and nothing is added
+// without a real consumer today.
+
+export type NodeId = string;
+
+export type NodeKind =
+  | 'feature' | 'requirement' | 'task' | 'adr'
+  | 'component' | 'rule' | 'test' | 'term';
+
+export type EdgeKind =
+  | 'refines' | 'decides' | 'constrains' | 'implements'
+  | 'touches' | 'verifies' | 'depends_on' | 'supersedes';
+
+export type Detail = 'title' | 'summary' | 'full';
+
+/** Closed list. Codes may be added; existing codes never change meaning. */
+export type ErrorCode =
+  | 'NOT_A_WORKSPACE'
+  | 'STALE_RUNTIME'
+  | 'UNKNOWN_FORMAT'
+  | 'INVALID_ENTITY'
+  | 'INVALID_KNOWLEDGE'
+  | 'NOT_FOUND'
+  | 'IO';
+
+export type CoreError = { code: ErrorCode; message: string; resolveWith?: string };
+
+export type Result<T> = { ok: true; value: T } | { ok: false; error: CoreError };
+
+/** Read view of an entity. Internal storage shape is not this type. */
+export type Entity = {
+  id: NodeId;
+  kind: NodeKind;
+  title: string;
+  status: string;
+  owner?: string;
+  created?: string;
+  source: string;
+  tags: string[];
+  summary?: string;
+  body?: string;
+  /** Size of the rendered text in bytes. Not a count of anything AI-specific. */
+  bytes: number;
+};
+
+export type Relation = { id: NodeId; kind: EdgeKind; direction: 'out' | 'in' };
+
+export type Problem = {
+  severity: 'error' | 'warning';
+  rule: string;
+  id?: NodeId;
+  message: string;
+};
+
+export type CompileReport = {
+  entities: number;
+  edges: number;
+  sourceHash: string;
+  changed: number;
+  durationMs: number;
+};
+
+export type CheckReport = { problems: Problem[]; errors: number; warnings: number };
+
+export type KnowledgeApi = {
+  get(ids: NodeId[], detail?: Detail): Result<Entity[]>;
+  list(kind: string): Result<Entity[]>;
+  search(query: string, limit?: number, kinds?: string[]): Result<Entity[]>;
+  related(id: NodeId, edge?: EdgeKind): Result<Relation[]>;
+};
+
+// --- Context compilation -----------------------------------------------------
+
+export type Verdict = 'COMPLETE' | 'MISSING_CONTEXT';
+
+export type ContextLayer = 'L0' | 'L1' | 'L2' | 'L3' | 'L4' | 'L5';
+
+export type IncludedNode = {
+  id: NodeId;
+  kind: NodeKind;
+  layer: ContextLayer;
+  via: EdgeKind | 'seed';
+  depth: number;
+  detail: Detail;
+  tokens: number;
+  pinned: boolean;
+};
+
+export type ExcludedNode = {
+  id: NodeId;
+  kind: NodeKind;
+  reason: 'budget';
+  tokens: number;
+};
+
+/** What is absent. Never a silent omission. */
+export type MissingItem = {
+  kind: 'requirement' | 'feature' | 'architecture' | 'rule' | 'budget';
+  message: string;
+  searched: string[];
+};
+
+export type CompiledContext = {
+  contextId: string;
+  task: NodeId;
+  verdict: Verdict;
+  budget: number;
+  used: number;
+  nodes: number;
+  included: IncludedNode[];
+  excluded: ExcludedNode[];
+  missing: MissingItem[];
+  text: string;
+  /** hash of text; identical inputs must produce an identical hash */
+  hash: string;
+  cacheHit: boolean;
+  timings: { retrieveMs: number; selectMs: number; compressMs: number; renderMs: number; totalMs: number };
+};
+
+// --- Knowledge health --------------------------------------------------------
+
+export type HealthFinding = {
+  check: 'orphan' | 'broken-reference' | 'unused-rule' | 'unused-decision'
+       | 'missing-relationship' | 'unreviewed'
+       | 'stale-status' | 'missing-touches' | 'dead-term';
+  id: NodeId;
+  kind: NodeKind;
+  message: string;
+};
+
+/** Read-only. doctor reports; it never modifies the project (REQ-0005). */
+export type HealthReport = {
+  entities: number;
+  findings: HealthFinding[];
+  byCheck: Record<string, number>;
+};
+
+// --- Execution traces --------------------------------------------------------
+
+/**
+ * One recorded step of an execution. Added because the MCP adapter needs to
+ * attribute tool calls to a caller (REQ-0010) and adapters may not reach into
+ * the Core to do it. A real consumer exists today; nothing here is speculative.
+ */
+export type TraceInput = {
+  command: string;
+  durationMs: number;
+  ok: boolean;
+  task?: string;
+  nodes?: number;
+  tokens?: number;
+  detail?: string;
+};
+
+export type TraceStep = {
+  ts: string;
+  session: string;
+  step: number;
+  command: string;
+  durationMs: number;
+  caller?: string;
+  task?: string;
+  verdict?: string;
+  nodes?: number;
+  tokens?: number;
+  cacheHit?: boolean;
+  ok?: boolean;
+  detail?: string;
+};

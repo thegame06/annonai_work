@@ -1,0 +1,8 @@
+id: REQ-0009
+kind: requirement
+title: Every context compilation belongs to a session
+status: accepted
+feature: FEAT-0004
+owner: bladimir
+summary: A session id groups the steps of one task execution.
+body: Without a grouping key the telemetry is a pile of events and no execution can be reconstructed.

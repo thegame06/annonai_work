@@ -1,0 +1,7 @@
+id: TEST-0004
+kind: test
+title: Settlement rerun produces an identical batch
+status: passing
+verifies: [REQ-0006]
+summary: |
+  Regression test: settlement rerun produces an identical batch.

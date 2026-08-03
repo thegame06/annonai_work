@@ -1,0 +1,8 @@
+id: REQ-0002
+kind: requirement
+title: Intent creation is idempotent
+status: accepted
+feature: FEAT-0001
+owner: bladimir
+summary: A repeated create request with the same idempotency key returns the original intent.
+body: The key is supplied by the merchant, scoped per merchant, and retained for 24 hours. A conflicting body with a reused key is a 409.

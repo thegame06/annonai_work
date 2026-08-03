@@ -1,0 +1,293 @@
+{
+  "TASK-0001": {
+    "category": "feature",
+    "required": [
+      "ADR-0001",
+      "CMP-0002",
+      "FEAT-0001",
+      "REQ-0001",
+      "RULE-0001",
+      "RULE-0002",
+      "TASK-0001"
+    ]
+  },
+  "TASK-0002": {
+    "category": "feature",
+    "required": [
+      "ADR-0003",
+      "CMP-0001",
+      "CMP-0003",
+      "FEAT-0001",
+      "REQ-0002",
+      "RULE-0001",
+      "RULE-0003",
+      "TASK-0002"
+    ]
+  },
+  "TASK-0003": {
+    "category": "bugfix",
+    "required": [
+      "CMP-0002",
+      "FEAT-0001",
+      "REQ-0003",
+      "RULE-0001",
+      "RULE-0002",
+      "TASK-0003"
+    ]
+  },
+  "TASK-0004": {
+    "category": "feature",
+    "required": [
+      "CMP-0002",
+      "FEAT-0002",
+      "REQ-0004",
+      "RULE-0001",
+      "RULE-0002",
+      "TASK-0004"
+    ]
+  },
+  "TASK-0005": {
+    "category": "refactor",
+    "required": [
+      "ADR-0002",
+      "CMP-0003",
+      "FEAT-0002",
+      "REQ-0005",
+      "RULE-0001",
+      "RULE-0003",
+      "TASK-0005"
+    ]
+  },
+  "TASK-0006": {
+    "category": "bugfix",
+    "required": [
+      "ADR-0004",
+      "CMP-0005",
+      "FEAT-0003",
+      "REQ-0006",
+      "RULE-0003",
+      "RULE-0006",
+      "TASK-0006"
+    ]
+  },
+  "TASK-0007": {
+    "category": "feature",
+    "required": [
+      "ADR-0002",
+      "CMP-0003",
+      "CMP-0005",
+      "FEAT-0003",
+      "REQ-0007",
+      "RULE-0001",
+      "RULE-0003",
+      "RULE-0006",
+      "TASK-0007"
+    ]
+  },
+  "TASK-0008": {
+    "category": "integration",
+    "required": [
+      "ADR-0003",
+      "CMP-0003",
+      "CMP-0006",
+      "FEAT-0004",
+      "REQ-0008",
+      "RULE-0001",
+      "RULE-0003",
+      "RULE-0005",
+      "TASK-0008"
+    ]
+  },
+  "TASK-0009": {
+    "category": "security",
+    "required": [
+      "CMP-0006",
+      "FEAT-0004",
+      "REQ-0009",
+      "RULE-0005",
+      "TASK-0009"
+    ]
+  },
+  "TASK-0010": {
+    "category": "architecture",
+    "required": [
+      "ADR-0004",
+      "CMP-0003",
+      "CMP-0008",
+      "FEAT-0005",
+      "REQ-0010",
+      "RULE-0001",
+      "RULE-0003",
+      "RULE-0006",
+      "TASK-0010"
+    ]
+  },
+  "TASK-0011": {
+    "category": "testing",
+    "required": [
+      "CMP-0005",
+      "CMP-0008",
+      "FEAT-0005",
+      "REQ-0011",
+      "RULE-0003",
+      "RULE-0006",
+      "TASK-0011"
+    ]
+  },
+  "TASK-0012": {
+    "category": "security",
+    "required": [
+      "CMP-0007",
+      "FEAT-0006",
+      "REQ-0012",
+      "TASK-0012"
+    ]
+  },
+  "TASK-0013": {
+    "category": "react",
+    "required": [
+      "ADR-0005",
+      "CMP-0004",
+      "FEAT-0007",
+      "REQ-0013",
+      "RULE-0001",
+      "RULE-0004",
+      "TASK-0013"
+    ]
+  },
+  "TASK-0014": {
+    "category": "react",
+    "required": [
+      "CMP-0001",
+      "CMP-0004",
+      "FEAT-0007",
+      "REQ-0014",
+      "RULE-0001",
+      "RULE-0004",
+      "TASK-0014"
+    ]
+  },
+  "TASK-0015": {
+    "category": "architecture",
+    "required": [
+      "ADR-0006",
+      "CMP-0005",
+      "FEAT-0008",
+      "REQ-0015",
+      "RULE-0003",
+      "RULE-0006",
+      "TASK-0015"
+    ]
+  },
+  "TASK-0016": {
+    "category": "feature",
+    "required": [
+      "CMP-0005",
+      "CMP-0007",
+      "FEAT-0008",
+      "REQ-0016",
+      "RULE-0003",
+      "RULE-0006",
+      "TASK-0016"
+    ]
+  },
+  "TASK-0017": {
+    "category": "feature",
+    "required": [
+      "CMP-0002",
+      "CMP-0005",
+      "FEAT-0001",
+      "REQ-0017",
+      "RULE-0001",
+      "RULE-0002",
+      "RULE-0003",
+      "RULE-0006",
+      "TASK-0017"
+    ]
+  },
+  "TASK-0018": {
+    "category": "integration",
+    "required": [
+      "CMP-0007",
+      "FEAT-0006",
+      "REQ-0018",
+      "TASK-0018"
+    ]
+  },
+  "TASK-0019": {
+    "category": "testing",
+    "required": [
+      "ADR-0002",
+      "CMP-0002",
+      "CMP-0003",
+      "FEAT-0002",
+      "REQ-0004",
+      "REQ-0005",
+      "RULE-0001",
+      "RULE-0002",
+      "RULE-0003",
+      "TASK-0019"
+    ]
+  },
+  "TASK-0020": {
+    "category": "mongodb",
+    "required": [
+      "ADR-0004",
+      "CMP-0003",
+      "FEAT-0003",
+      "REQ-0006",
+      "RULE-0001",
+      "RULE-0003",
+      "TASK-0020"
+    ]
+  },
+  "TASK-0021": {
+    "category": "refactor",
+    "required": [
+      "ADR-0003",
+      "CMP-0002",
+      "CMP-0003",
+      "FEAT-0001",
+      "REQ-0002",
+      "REQ-0003",
+      "RULE-0001",
+      "RULE-0002",
+      "RULE-0003",
+      "TASK-0021"
+    ]
+  },
+  "TASK-0022": {
+    "category": "performance",
+    "required": [
+      "ADR-0004",
+      "CMP-0008",
+      "FEAT-0005",
+      "REQ-0010",
+      "RULE-0006",
+      "TASK-0022"
+    ]
+  },
+  "TASK-0023": {
+    "category": "integration",
+    "required": [
+      "ADR-0003",
+      "CMP-0006",
+      "FEAT-0004",
+      "REQ-0008",
+      "RULE-0005",
+      "TASK-0023"
+    ]
+  },
+  "TASK-0024": {
+    "category": "react",
+    "required": [
+      "ADR-0001",
+      "CMP-0004",
+      "FEAT-0001",
+      "REQ-0001",
+      "RULE-0001",
+      "RULE-0004",
+      "TASK-0024"
+    ]
+  }
+}

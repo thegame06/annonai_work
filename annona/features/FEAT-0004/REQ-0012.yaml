@@ -1,0 +1,8 @@
+id: REQ-0012
+kind: requirement
+title: The agent benchmark never calls a model from the Core
+status: accepted
+feature: FEAT-0004
+owner: bladimir
+summary: Model invocation happens in the CLI harness through a configured command.
+body: Annona prepares context and measures. It must never acquire model credentials, streaming or retry logic.

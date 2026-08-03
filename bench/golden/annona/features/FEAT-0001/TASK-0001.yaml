@@ -1,0 +1,9 @@
+id: TASK-0001
+kind: task
+title: Introduce the Money value object
+status: ready
+owner: bladimir
+tags: [feature]
+implements: [REQ-0001]
+touches: [CMP-0002]
+summary: Replace decimal amounts in the domain with a Money value object holding minor units and currency.

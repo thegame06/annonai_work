@@ -1,0 +1,9 @@
+id: TASK-0014
+kind: task
+title: Refetch refundable balance before submit
+status: ready
+owner: bladimir
+tags: [react]
+implements: [REQ-0014]
+touches: [CMP-0004, CMP-0001]
+summary: The portal submits against a cached balance and gets a late rejection.

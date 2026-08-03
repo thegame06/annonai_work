@@ -1,0 +1,9 @@
+id: ADR-0005
+kind: adr
+title: Sessions are derived from the runtime, not configured
+status: accepted
+subject: session-identity
+owner: bladimir
+decides: [REQ-0009]
+summary: Decision on session-identity.
+body: Asking a caller for a session id makes the trace depend on caller discipline. Deriving it means a trace exists even when nobody asked for one.

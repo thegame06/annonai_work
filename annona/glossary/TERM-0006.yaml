@@ -1,0 +1,5 @@
+id: TERM-0006
+kind: term
+title: Trace
+status: active
+definition: A persisted record of one step of an execution, readable after the process has exited.

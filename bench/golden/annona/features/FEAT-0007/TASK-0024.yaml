@@ -1,0 +1,9 @@
+id: TASK-0024
+kind: task
+title: Format all portal amounts through useMoney
+status: ready
+owner: bladimir
+tags: [react]
+implements: [REQ-0001]
+touches: [CMP-0004]
+summary: Several components format amounts inline and round inconsistently.

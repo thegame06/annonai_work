@@ -1,0 +1,8 @@
+id: REQ-0009
+kind: requirement
+title: Webhook signatures are verified before parsing
+status: accepted
+feature: FEAT-0004
+owner: bladimir
+summary: Reject unsigned or badly signed payloads before touching the body.
+body: HMAC SHA-256 over the raw request bytes using the per acquirer secret. Constant time comparison.

@@ -1,0 +1,8 @@
+id: REQ-0014
+kind: requirement
+title: Refundable balance is fetched fresh before confirmation
+status: accepted
+feature: FEAT-0007
+owner: bladimir
+summary: The portal must not rely on a cached balance.
+body: The confirmation step refetches the balance; a stale value blocks submission with a message to retry.

@@ -1,0 +1,5 @@
+id: TERM-0003
+kind: term
+title: Knowledge coverage
+status: active
+definition: The share of tasks whose compiled context returns a COMPLETE verdict.

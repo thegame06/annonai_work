@@ -1,0 +1,8 @@
+id: REQ-0005
+kind: requirement
+title: doctor never modifies the project
+status: accepted
+feature: FEAT-0002
+owner: bladimir
+summary: The health command is strictly read-only.
+body: It may read the runtime and the knowledge source, and write nothing. A command that repairs knowledge would make the source of truth conditional on tooling.

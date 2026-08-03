@@ -1,0 +1,9 @@
+id: TASK-0020
+kind: task
+title: Index ledger entries by merchant and value date
+status: ready
+owner: bladimir
+tags: [mongodb]
+implements: [REQ-0006]
+touches: [CMP-0003]
+summary: Settlement scans the collection; add the compound index and verify the plan.

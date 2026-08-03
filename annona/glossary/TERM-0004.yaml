@@ -1,0 +1,5 @@
+id: TERM-0004
+kind: term
+title: Session
+status: active
+definition: One task execution, from the first knowledge lookup to the last recorded step.

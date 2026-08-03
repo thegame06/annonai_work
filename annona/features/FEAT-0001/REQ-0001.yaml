@@ -1,0 +1,8 @@
+id: REQ-0001
+kind: requirement
+title: Instruction files are generated, never authored
+status: accepted
+feature: FEAT-0001
+owner: bladimir
+summary: CLAUDE.md, AGENTS.md, CODEX.md and GEMINI.md are produced by annona compile.
+body: They carry a generated banner and are gitignored. Hand edits are lost on the next compile by design, which is what keeps a generated artifact from becoming authoritative.

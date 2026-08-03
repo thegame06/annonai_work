@@ -1,0 +1,8 @@
+id: FEAT-0003
+kind: feature
+title: Dogfooding telemetry
+status: in_progress
+owner: bladimir
+created: 2026-07-31
+summary: Every engineering claim about Annona is backed by locally recorded measurement.
+body: Records engineering metrics only, appended locally, never transmitted. If a claim in the roadmap cannot be traced to a telemetry line, it is an opinion.

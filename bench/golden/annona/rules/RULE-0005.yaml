@@ -1,0 +1,7 @@
+id: RULE-0005
+kind: rule
+title: Integration endpoints verify signatures before parsing
+status: active
+applies_to: [CMP-0006]
+summary: Signature verification happens on raw bytes, before deserialization, to avoid parsing attacker-controlled payloads.
+body: Signature verification happens on raw bytes, before deserialization, to avoid parsing attacker-controlled payloads.

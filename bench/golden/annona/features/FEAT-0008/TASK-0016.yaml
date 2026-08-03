@@ -1,0 +1,9 @@
+id: TASK-0016
+kind: task
+title: Record the acting principal on every audit entry
+status: ready
+owner: bladimir
+tags: [feature]
+implements: [REQ-0016]
+touches: [CMP-0005, CMP-0007]
+summary: Thread the principal through the command pipeline into the event metadata.

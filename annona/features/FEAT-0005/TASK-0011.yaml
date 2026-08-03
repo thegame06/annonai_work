@@ -1,0 +1,8 @@
+id: TASK-0011
+kind: task
+title: Implement annona done
+status: done
+owner: bladimir
+implements: [REQ-0014]
+touches: [CMP-0004, CMP-0005]
+summary: Mark a task complete and update affected entities in one command.

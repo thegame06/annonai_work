@@ -1,0 +1,9 @@
+id: ADR-0004
+kind: adr
+title: doctor reports, check enforces
+status: accepted
+subject: health-vs-validation
+owner: bladimir
+decides: [REQ-0005, REQ-0006]
+summary: Decision on health-vs-validation.
+body: Validation blocks the build on the five invariants. Health advises on decay. Merging them would either block builds for advisory reasons or hide invariant failures among warnings.

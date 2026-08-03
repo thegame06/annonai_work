@@ -1,0 +1,8 @@
+id: TASK-0001
+kind: task
+title: Generate AI instruction files during compile
+status: done
+owner: bladimir
+implements: [REQ-0001, REQ-0002]
+touches: [CMP-0002, CMP-0004]
+summary: Render CLAUDE.md, AGENTS.md, CODEX.md and GEMINI.md from one template on every compile.

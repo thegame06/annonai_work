@@ -1,0 +1,7 @@
+id: RULE-0005
+kind: rule
+title: No feature without observed friction
+status: active
+applies_to: [CMP-0005]
+summary: During dogfooding, a feature is justified by a recorded friction entry, not by an architectural idea.
+body: During dogfooding, a feature is justified by a recorded friction entry, not by an architectural idea.

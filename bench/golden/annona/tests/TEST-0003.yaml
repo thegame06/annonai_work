@@ -1,0 +1,7 @@
+id: TEST-0003
+kind: test
+title: Refund above refundable balance is rejected
+status: passing
+verifies: [REQ-0004]
+summary: |
+  Regression test: refund above refundable balance is rejected.

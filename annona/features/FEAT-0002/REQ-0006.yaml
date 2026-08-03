@@ -1,0 +1,9 @@
+id: REQ-0006
+kind: requirement
+title: doctor reports unused rules and decisions
+status: accepted
+feature: FEAT-0002
+owner: bladimir
+summary: A rule constraining nothing, or a decision deciding nothing, is dead knowledge.
+body: |
+  Dead knowledge is worse than missing knowledge: it costs maintenance and misleads readers into thinking a topic is covered.

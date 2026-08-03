@@ -1,0 +1,8 @@
+id: CMP-0004
+kind: component
+title: core-workspace
+status: active
+owner: bladimir
+summary: The single public entry point and the internal command dispatch.
+body: Workspace.load is read-only and constant time. Every operation is a command; CLI and MCP are serializers over the same commands.
+depends_on: [CMP-0002, CMP-0003]

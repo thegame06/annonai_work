@@ -1,0 +1,5 @@
+id: TEST-0005
+kind: test
+title: A session groups its trace records
+status: pending
+verifies: [REQ-0009, REQ-0011]

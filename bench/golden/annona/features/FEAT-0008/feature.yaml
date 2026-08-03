@@ -1,0 +1,8 @@
+id: FEAT-0008
+kind: feature
+title: Audit trail
+status: in_progress
+owner: bladimir
+created: 2026-03-01
+summary: Record every state change to a payment intent with actor and reason.
+body: The trail is append only and readable by merchant admins. It is derived from domain events, never written by hand.

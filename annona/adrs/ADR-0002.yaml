@@ -1,0 +1,9 @@
+id: ADR-0002
+kind: adr
+title: MCP ships as a separate package
+status: accepted
+subject: agent-surface
+owner: bladimir
+decides: [REQ-0004, REQ-0003]
+summary: Decision on agent-surface.
+body: Placing MCP in the Core would make the Core depend on an agent protocol that will change faster than the knowledge format. As an adapter it can be replaced without touching anything.

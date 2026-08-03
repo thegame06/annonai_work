@@ -1,0 +1,8 @@
+id: CMP-0005
+kind: component
+title: settlement-worker
+status: active
+owner: platform
+summary: Background worker projecting ledger entries into daily settlement batches.
+body: Consumes domain events from the outbox, groups by merchant and value date, writes settlement documents. Idempotent per event id. Runs as a scheduled job; a rerun for the same day must produce the same batch.
+depends_on: [CMP-0003]

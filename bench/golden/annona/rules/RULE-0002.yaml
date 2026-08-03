@@ -1,0 +1,7 @@
+id: RULE-0002
+kind: rule
+title: Aggregates enforce their own invariants
+status: active
+applies_to: [CMP-0002]
+summary: Validation of a domain rule belongs inside the aggregate, never in a controller, handler or database constraint alone.
+body: Validation of a domain rule belongs inside the aggregate, never in a controller, handler or database constraint alone.

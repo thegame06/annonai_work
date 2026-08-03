@@ -1,0 +1,8 @@
+id: REQ-0011
+kind: requirement
+title: A session can be replayed after the fact
+status: accepted
+feature: FEAT-0004
+owner: bladimir
+summary: Timeline reconstructable from persisted records alone.
+body: No in-memory state and no live tailing. If the process died, the trace must still be readable.

@@ -1,0 +1,5 @@
+id: TEST-0004
+kind: test
+title: Telemetry never leaves the runtime
+status: passing
+verifies: [REQ-0007, REQ-0008]

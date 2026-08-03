@@ -1,0 +1,5 @@
+id: TEST-0008
+kind: test
+title: done updates knowledge in one step
+status: pending
+verifies: [REQ-0014]

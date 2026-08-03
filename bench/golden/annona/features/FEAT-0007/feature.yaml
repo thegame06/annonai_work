@@ -1,0 +1,8 @@
+id: FEAT-0007
+kind: feature
+title: Portal refund workflow
+status: in_progress
+owner: bladimir
+created: 2026-03-01
+summary: Allow portal users to issue refunds with a two step confirmation.
+body: The first step shows the remaining refundable balance, the second requires explicit confirmation of the amount. Optimistic UI is not permitted for money movements.

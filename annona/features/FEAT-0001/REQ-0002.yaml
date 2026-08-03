@@ -1,0 +1,8 @@
+id: REQ-0002
+kind: requirement
+title: One instruction template serves every agent
+status: accepted
+feature: FEAT-0001
+owner: bladimir
+summary: All agent files render from a single source so they cannot drift apart.
+body: Only the filename and a short vendor preamble differ. Divergent per-vendor instructions would reintroduce the vendor coupling the architecture exists to avoid.

@@ -1,0 +1,7 @@
+id: RULE-0001
+kind: rule
+title: Money never uses floating point
+status: active
+applies_to: [CMP-0001, CMP-0002, CMP-0003, CMP-0004]
+summary: No double, float or JavaScript number arithmetic on monetary values.
+body: No double, float or JavaScript number arithmetic on monetary values. Use the Money value object in .NET and minor-unit integers in TypeScript.

@@ -1,0 +1,9 @@
+id: TASK-0015
+kind: task
+title: Project audit entries from domain events
+status: ready
+owner: bladimir
+tags: [architecture]
+implements: [REQ-0015]
+touches: [CMP-0005]
+summary: Replace direct audit writes with a projector over the event stream.

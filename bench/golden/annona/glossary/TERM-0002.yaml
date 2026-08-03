@@ -1,0 +1,5 @@
+id: TERM-0002
+kind: term
+title: Refundable balance
+status: active
+definition: Captured amount minus the sum of prior refunds for a payment intent.

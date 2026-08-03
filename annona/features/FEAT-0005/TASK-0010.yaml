@@ -1,0 +1,8 @@
+id: TASK-0010
+kind: task
+title: Detect knowledge drift in doctor
+status: done
+owner: bladimir
+implements: [REQ-0013]
+touches: [CMP-0002, CMP-0005]
+summary: Report stale status, passing tests still marked pending, missing touches and dead knowledge.

@@ -1,0 +1,8 @@
+id: REQ-0018
+kind: requirement
+title: Legal entity data is verified against the registry
+status: accepted
+feature: FEAT-0006
+owner: bladimir
+summary: Onboarding calls the company registry before provisioning.
+body: A failed verification leaves the merchant in pending state; it never blocks the request synchronously for more than three seconds.

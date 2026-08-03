@@ -1,0 +1,9 @@
+id: TASK-0018
+kind: task
+title: Call the company registry during onboarding
+status: ready
+owner: bladimir
+tags: [integration]
+implements: [REQ-0018]
+touches: [CMP-0007]
+summary: Verify legal entity data with a three second budget and a pending fallback.

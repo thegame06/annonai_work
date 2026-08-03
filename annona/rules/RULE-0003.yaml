@@ -1,0 +1,7 @@
+id: RULE-0003
+kind: rule
+title: Nothing generated is ever committed
+status: active
+applies_to: [CMP-0005, CMP-0004]
+summary: Generated artifacts live in the disposable runtime or are gitignored at the root.
+body: Generated artifacts live in the disposable runtime or are gitignored at the root. A generated file in git becomes authoritative by accident.

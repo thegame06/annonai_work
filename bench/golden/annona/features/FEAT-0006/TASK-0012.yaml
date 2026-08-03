@@ -1,0 +1,9 @@
+id: TASK-0012
+kind: task
+title: Hash API secrets at rest
+status: ready
+owner: bladimir
+tags: [security]
+implements: [REQ-0012]
+touches: [CMP-0007]
+summary: Secrets are stored in plaintext; store only a hash and show the secret once.

@@ -1,0 +1,5 @@
+id: TERM-0004
+kind: term
+title: Compensating entry
+status: active
+definition: A ledger entry that offsets an earlier one instead of modifying it.

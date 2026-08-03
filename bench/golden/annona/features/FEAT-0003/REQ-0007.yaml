@@ -1,0 +1,8 @@
+id: REQ-0007
+kind: requirement
+title: A closed batch is immutable
+status: accepted
+feature: FEAT-0003
+owner: bladimir
+summary: Once closed, a settlement batch is never modified.
+body: Late entries land in the next open batch with a reference to the period they belong to.

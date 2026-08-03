@@ -1,0 +1,9 @@
+id: TASK-0006
+kind: task
+title: Make settlement grouping deterministic
+status: ready
+owner: bladimir
+tags: [bugfix]
+implements: [REQ-0006]
+touches: [CMP-0005]
+summary: Batch contents differ between reruns because grouping reads the wall clock.

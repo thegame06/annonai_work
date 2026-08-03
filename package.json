@@ -1,0 +1,33 @@
+{
+  "name": "annona-work",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "test": "node --test packages/core/test/*.test.ts packages/mcp/test/*.test.ts",
+    "check:boundaries": "node tools/check-boundaries.mjs",
+    "check:api": "node tools/check-api.mjs",
+    "check:api:update": "node tools/check-api.mjs --update",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "ci": "npm run check:boundaries && npm run check:api && npm run test",
+    "bench": "node bench/compile.bench.ts",
+    "bench:context": "node packages/cli/bin/annona.mjs bench context --dataset=bench/golden"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "typescript": "^5.6.0"
+  },
+  "bin": {
+    "annona": "packages/cli/bin/annona.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thegame06/annonai_work.git"
+  },
+  "license": "Apache-2.0"
+}

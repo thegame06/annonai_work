@@ -1,0 +1,10 @@
+id: ADR-0001
+kind: adr
+title: Money as integer minor units
+status: accepted
+subject: money-representation
+owner: bladimir
+decides: [REQ-0001]
+summary: Decision on money-representation.
+body: |
+  Decimal and floating point were both rejected: decimal is not uniformly supported across MongoDB, JSON and JavaScript, and floating point loses cents. Integer minor units plus a currency code is representable everywhere without conversion.

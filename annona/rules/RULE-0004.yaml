@@ -1,0 +1,7 @@
+id: RULE-0004
+kind: rule
+title: Every command supports --json and uniform exit codes
+status: active
+applies_to: [CMP-0005, CMP-0006]
+summary: Zero success, one error, two usage, three halt.
+body: Zero success, one error, two usage, three halt. Agents and CI branch on exit codes, never on parsed prose.

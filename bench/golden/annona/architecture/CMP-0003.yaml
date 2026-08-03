@@ -1,0 +1,9 @@
+id: CMP-0003
+kind: component
+title: ledger-store
+status: active
+owner: platform
+summary: MongoDB persistence for the payment ledger and settlement projections.
+body: |
+  Collections: payment_intents, ledger_entries, settlements. Writes use a session per aggregate. Ledger entries are append-only; corrections are compensating entries, never updates. Indexes on merchantId+createdAt and idempotencyKey.
+depends_on: []

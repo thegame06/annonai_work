@@ -1,0 +1,8 @@
+id: REQ-0012
+kind: requirement
+title: Credentials are issued once and never retrievable
+status: accepted
+feature: FEAT-0006
+owner: bladimir
+summary: API secrets are shown at creation and stored only as a hash.
+body: Rotation issues a new secret and keeps the old one valid for one hour.

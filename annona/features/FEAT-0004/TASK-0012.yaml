@@ -1,0 +1,8 @@
+id: TASK-0012
+kind: task
+title: Build the agent benchmark harness
+status: done
+owner: bladimir
+implements: [REQ-0012]
+touches: [CMP-0005]
+summary: Two arms, repo-only against Annona context, with a pluggable runner command.

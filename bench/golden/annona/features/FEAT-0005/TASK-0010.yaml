@@ -1,0 +1,9 @@
+id: TASK-0010
+kind: task
+title: Move reporting queries onto projections
+status: ready
+owner: bladimir
+tags: [architecture]
+implements: [REQ-0010]
+touches: [CMP-0008, CMP-0003]
+summary: Reporting still queries payment_intents directly and blocks ledger writes.

@@ -1,0 +1,8 @@
+id: FEAT-0004
+kind: feature
+title: Observable agent execution
+status: in_progress
+owner: bladimir
+created: 2026-07-31
+summary: Prove from recorded evidence that an AI agent consumed Annona context while working.
+body: M1.5 proved the knowledge is sufficient. It did not prove an agent actually consulted it. Every claim must be reconstructable from persisted records, never from narration or a screenshot.

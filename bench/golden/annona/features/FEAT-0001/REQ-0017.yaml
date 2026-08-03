@@ -1,0 +1,8 @@
+id: REQ-0017
+kind: requirement
+title: Intents expire after seven days
+status: accepted
+feature: FEAT-0001
+owner: bladimir
+summary: An authorized but uncaptured intent expires and releases the hold.
+body: Expiry is driven by the worker, not by a database TTL, so the expiry raises a domain event and appears in the audit trail.

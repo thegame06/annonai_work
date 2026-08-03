@@ -1,0 +1,8 @@
+id: REQ-0008
+kind: requirement
+title: Webhook processing is idempotent
+status: accepted
+feature: FEAT-0004
+owner: bladimir
+summary: The same acquirer reference is processed at most once.
+body: Deduplication uses a unique index on acquirerReference. A duplicate delivery returns 200 without side effects.

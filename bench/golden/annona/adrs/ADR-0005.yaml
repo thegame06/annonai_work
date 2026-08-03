@@ -1,0 +1,9 @@
+id: ADR-0005
+kind: adr
+title: No optimistic UI for money movements
+status: accepted
+subject: ui-consistency
+owner: bladimir
+decides: [REQ-0013]
+summary: Decision on ui-consistency.
+body: Optimistic updates are appropriate for reversible actions. A refund is not reversible from the user perspective, so the portal waits for confirmation even though it feels slower.

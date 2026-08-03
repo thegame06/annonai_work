@@ -1,0 +1,8 @@
+id: REQ-0014
+kind: requirement
+title: Completion is one command
+status: accepted
+feature: FEAT-0005
+owner: bladimir
+summary: annona done updates status, timestamps and touched components in a single step.
+body: Seventeen manual edits per milestone is the measured cost this removes.

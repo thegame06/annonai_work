@@ -1,0 +1,9 @@
+id: FEAT-0002
+kind: feature
+title: Knowledge health
+status: in_progress
+owner: bladimir
+created: 2026-07-31
+summary: Engineers can see whether the knowledge base is decaying before it hurts them.
+body: |
+  Reports orphans, broken references, unused rules and decisions, and missing relationships. Reporting only: a health command that edits the project would make the source of truth untrustworthy.

@@ -1,0 +1,8 @@
+id: REQ-0011
+kind: requirement
+title: Reported totals reconcile with settlement batches
+status: accepted
+feature: FEAT-0005
+owner: bladimir
+summary: Reported settled volume equals the sum of closed batches for the period.
+body: Any divergence is a defect, not a rounding tolerance. The reconciliation test runs nightly.

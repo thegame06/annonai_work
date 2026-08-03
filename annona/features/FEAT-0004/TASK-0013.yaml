@@ -1,0 +1,8 @@
+id: TASK-0013
+kind: task
+title: Validate the token estimator against a real tokenizer
+status: ready
+owner: bladimir
+implements: [REQ-0012]
+touches: [CMP-0005]
+summary: Compare chars/4 against a real tokenizer on both benchmark arms and report the error band of every published figure.

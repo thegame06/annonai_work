@@ -1,0 +1,8 @@
+id: FEAT-0002
+kind: feature
+title: Refunds
+status: in_progress
+owner: bladimir
+created: 2026-03-01
+summary: Full and partial refunds against captured payments.
+body: A refund can never exceed the captured amount minus prior refunds. Partial refunds may be issued repeatedly until the remaining balance is zero.

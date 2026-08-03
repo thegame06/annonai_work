@@ -1,0 +1,7 @@
+id: TEST-0005
+kind: test
+title: Duplicate webhook delivery has no side effects
+status: passing
+verifies: [REQ-0008]
+summary: |
+  Regression test: duplicate webhook delivery has no side effects.

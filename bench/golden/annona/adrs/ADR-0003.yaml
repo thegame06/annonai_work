@@ -1,0 +1,10 @@
+id: ADR-0003
+kind: adr
+title: Idempotency keys held for 24 hours
+status: accepted
+subject: idempotency
+owner: bladimir
+decides: [REQ-0002, REQ-0008]
+summary: Decision on idempotency.
+body: |
+  Longer retention grows the index without improving safety: acquirer retries stop within minutes and merchant retries within hours. 24 hours covers both with a bounded index.

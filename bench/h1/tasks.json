@@ -1,0 +1,46 @@
+{
+  "$comment": "H1 executable dataset. Each item is a task already modelled in annona/ that owns source covered by the test suite. The oracle is `npm test`: the hole is opened, the agent is asked to fill it, and the suite decides. Items whose source has no test coverage (TASK-0009 replay, TASK-0011 done) are excluded because they cannot be scored.",
+  "oracle": {
+    "command": "node",
+    "args": ["--experimental-strip-types", "--test", "packages/core/test/*.test.ts", "packages/mcp/test/*.test.ts"],
+    "passIf": "exitCode === 0"
+  },
+  "items": [
+    {
+      "task": "TASK-0001",
+      "lines": 69,
+      "remove": ["packages/core/src/execution/instructions.ts"],
+      "verifiedBreaks": true
+    },
+    {
+      "task": "TASK-0002",
+      "lines": 157,
+      "remove": ["packages/mcp/src/server.ts"],
+      "verifiedBreaks": true
+    },
+    {
+      "task": "TASK-0003",
+      "lines": 90,
+      "remove": ["packages/core/src/execution/health.ts"],
+      "verifiedBreaks": true
+    },
+    {
+      "task": "TASK-0004",
+      "lines": 65,
+      "remove": ["packages/core/src/execution/telemetry.ts"],
+      "verifiedBreaks": true
+    },
+    {
+      "task": "TASK-0006",
+      "lines": 1,
+      "revert": [
+        {
+          "file": "packages/core/src/knowledge/graph.ts",
+          "from": "  // A term's definition is its summary. Without this the definition never\n  // reaches the runtime and every glossary entry renders empty.\n  summary: e.kind === 'term' ? e.definition : e.summary,",
+          "to": "  summary: e.summary,"
+        }
+      ],
+      "verifiedBreaks": true
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+id: TASK-0002
+kind: task
+title: Add idempotency key handling to intent creation
+status: ready
+owner: bladimir
+tags: [feature]
+implements: [REQ-0002]
+touches: [CMP-0001, CMP-0003]
+summary: Store and look up idempotency keys, returning the original intent on replay.

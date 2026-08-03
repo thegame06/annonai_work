@@ -1,0 +1,6 @@
+id: TERM-0001
+kind: term
+title: Minor units
+status: active
+definition: |
+  The smallest indivisible unit of a currency: cents for EUR, yen for JPY. All stored amounts are integers of minor units.

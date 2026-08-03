@@ -1,0 +1,9 @@
+id: CMP-0002
+kind: component
+title: payments-domain
+status: active
+owner: platform
+summary: |
+  Domain layer for payments following DDD: PaymentIntent aggregate, Money value object, domain events.
+body: PaymentIntent is the only aggregate root. Money is an immutable value object holding amount in minor units plus ISO currency. State transitions raise domain events consumed by the settlement projector. No infrastructure types appear in this project.
+depends_on: [CMP-0003]

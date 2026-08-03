@@ -1,0 +1,8 @@
+id: FEAT-0006
+kind: feature
+title: Merchant onboarding
+status: in_progress
+owner: bladimir
+created: 2026-03-01
+summary: Register a merchant and issue API credentials.
+body: Onboarding collects legal entity data, verifies it against the registry, then provisions credentials and a sandbox merchant.

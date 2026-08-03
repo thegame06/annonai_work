@@ -1,0 +1,8 @@
+id: REQ-0010
+kind: requirement
+title: MCP invocations record the caller
+status: accepted
+feature: FEAT-0004
+owner: bladimir
+summary: Every tool call records which agent made it.
+body: This is the evidence that an agent, not a human at a terminal, consulted Annona. The caller comes from the MCP initialize handshake.

@@ -1,0 +1,8 @@
+id: REQ-0013
+kind: requirement
+title: Drift is detected, not assumed
+status: accepted
+feature: FEAT-0005
+owner: bladimir
+summary: doctor reports concrete stale knowledge with the evidence that proves it stale.
+body: A task marked ready whose test already passes is drift. Reporting it without the evidence would be an opinion.

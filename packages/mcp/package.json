@@ -1,0 +1,7 @@
+{
+  "name": "@annona/mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": { "annona-mcp": "./bin/annona-mcp.mjs" },
+  "dependencies": { "@annona/core": "0.1.0" }
+}

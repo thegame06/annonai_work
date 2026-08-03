@@ -1,0 +1,9 @@
+id: TASK-0009
+kind: task
+title: Verify HMAC before deserializing the payload
+status: ready
+owner: bladimir
+tags: [security]
+implements: [REQ-0009]
+touches: [CMP-0006]
+summary: Signature check currently runs after model binding.

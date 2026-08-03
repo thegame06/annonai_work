@@ -1,0 +1,9 @@
+id: TASK-0008
+kind: task
+title: Deduplicate acquirer webhooks
+status: ready
+owner: bladimir
+tags: [integration]
+implements: [REQ-0008]
+touches: [CMP-0006, CMP-0003]
+summary: Add a unique index on acquirerReference and short-circuit duplicates.

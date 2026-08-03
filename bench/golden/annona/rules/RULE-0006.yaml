@@ -1,0 +1,7 @@
+id: RULE-0006
+kind: rule
+title: Projections must not read the wall clock
+status: active
+applies_to: [CMP-0005, CMP-0008]
+summary: A projection that reads DateTime.
+body: A projection that reads DateTime.Now cannot be replayed deterministically. Time comes from the event.

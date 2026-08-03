@@ -1,0 +1,5 @@
+id: TEST-0006
+kind: test
+title: MCP telemetry records the caller
+status: pending
+verifies: [REQ-0010]

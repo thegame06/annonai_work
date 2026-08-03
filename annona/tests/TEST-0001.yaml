@@ -1,0 +1,5 @@
+id: TEST-0001
+kind: test
+title: Instruction files regenerate identically
+status: passing
+verifies: [REQ-0001, REQ-0002]

@@ -1,0 +1,8 @@
+id: TASK-0005
+kind: task
+title: Report dogfooding metrics from telemetry
+status: done
+owner: bladimir
+implements: [REQ-0008]
+touches: [CMP-0005]
+summary: Summarize knowledge coverage, context sufficiency and latency from the recorded lines.

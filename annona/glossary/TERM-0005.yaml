@@ -1,0 +1,5 @@
+id: TERM-0005
+kind: term
+title: Drift
+status: active
+definition: Knowledge that contradicts the state of the code it describes.

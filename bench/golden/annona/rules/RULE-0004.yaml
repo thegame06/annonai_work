@@ -1,0 +1,7 @@
+id: RULE-0004
+kind: rule
+title: React components never format money themselves
+status: active
+applies_to: [CMP-0004]
+summary: All formatting goes through useMoney.
+body: All formatting goes through useMoney. Components receive minor units and a currency, never a preformatted string.

@@ -1,0 +1,5 @@
+id: TERM-0003
+kind: term
+title: Value date
+status: active
+definition: The business date a ledger entry settles on, which may differ from its creation timestamp.

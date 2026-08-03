@@ -1,0 +1,8 @@
+id: FEAT-0004
+kind: feature
+title: Acquirer webhooks
+status: in_progress
+owner: bladimir
+created: 2026-03-01
+summary: Receive and process asynchronous acquirer notifications.
+body: The acquirer may deliver the same notification more than once and out of order. Processing must be idempotent and order independent.

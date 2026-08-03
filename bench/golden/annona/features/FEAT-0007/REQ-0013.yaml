@@ -1,0 +1,9 @@
+id: REQ-0013
+kind: requirement
+title: Refund confirmation requires an explicit amount
+status: accepted
+feature: FEAT-0007
+owner: bladimir
+summary: The user retypes or confirms the amount before submission.
+body: |
+  No optimistic UI: the portal shows a pending state until the API confirms, because a money movement that appears to succeed and then fails is worse than a slow one.

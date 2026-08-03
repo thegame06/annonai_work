@@ -1,0 +1,5 @@
+id: TERM-0001
+kind: term
+title: Dogfooding
+status: active
+definition: Using Annona to build Annona, so product defects are discovered by the team that can fix them.

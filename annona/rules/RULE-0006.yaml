@@ -1,0 +1,7 @@
+id: RULE-0006
+kind: rule
+title: Evidence is persisted, never narrated
+status: active
+applies_to: [CMP-0002, CMP-0005, CMP-0006]
+summary: Any claim about an execution must be reconstructable from a file on disk.
+body: A number that exists only in a report and not in telemetry is an assertion, not evidence.

@@ -1,0 +1,8 @@
+id: CMP-0004
+kind: component
+title: merchant-portal
+status: active
+owner: platform
+summary: React 18 single page application used by merchants to review payments and issue refunds.
+body: Vite build, TanStack Query for server state, no global store. Money is formatted through a single useMoney hook so rounding never happens in components. Routes are code split per section.
+depends_on: []

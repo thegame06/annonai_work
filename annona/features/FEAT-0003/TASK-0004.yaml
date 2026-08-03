@@ -1,0 +1,8 @@
+id: TASK-0004
+kind: task
+title: Record engineering telemetry locally
+status: done
+owner: bladimir
+implements: [REQ-0007, REQ-0008]
+touches: [CMP-0002, CMP-0004]
+summary: Append one line per command with duration, verdict and node counts.

@@ -1,0 +1,8 @@
+id: REQ-0016
+kind: requirement
+title: Audit entries record the acting principal
+status: accepted
+feature: FEAT-0008
+owner: bladimir
+summary: Every entry names the user or system actor and the reason.
+body: System actors use a stable identifier per component so automated changes are distinguishable from human ones.

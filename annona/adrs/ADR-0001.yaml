@@ -1,0 +1,10 @@
+id: ADR-0001
+kind: adr
+title: Generated instruction files are gitignored
+status: accepted
+subject: generated-artifacts
+owner: bladimir
+decides: [REQ-0001]
+summary: Decision on generated-artifacts.
+body: |
+  Committing them requires a checksum banner and drift detection to police a rule the architecture already states. Gitignoring deletes that machinery: compile is step one after clone anyway.

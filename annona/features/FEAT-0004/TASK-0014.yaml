@@ -1,0 +1,8 @@
+id: TASK-0014
+kind: task
+title: Measure how much knowledge can disappear silently
+status: ready
+owner: bladimir
+implements: [REQ-0012]
+touches: [CMP-0005]
+summary: Delete each entity class from the corpus, recompile, and count how many compiled contexts change their verdict.

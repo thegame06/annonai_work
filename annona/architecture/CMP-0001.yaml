@@ -1,0 +1,8 @@
+id: CMP-0001
+kind: component
+title: core-knowledge
+status: active
+owner: bladimir
+summary: Entities, graph, validation and the compile pipeline.
+body: Owns the eight node kinds, the eight edge kinds, the five invariants and the deterministic compile. Knows nothing about tokens, agents, MCP or any external system; a CI rule enforces the isolation.
+depends_on: []

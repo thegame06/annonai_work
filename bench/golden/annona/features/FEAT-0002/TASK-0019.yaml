@@ -1,0 +1,9 @@
+id: TASK-0019
+kind: task
+title: Add refund regression tests
+status: ready
+owner: bladimir
+tags: [testing]
+implements: [REQ-0004, REQ-0005]
+touches: [CMP-0002, CMP-0003]
+summary: Cover partial refunds, over-refund rejection and compensating entry shape.

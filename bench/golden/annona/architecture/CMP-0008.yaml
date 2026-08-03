@@ -1,0 +1,8 @@
+id: CMP-0008
+kind: component
+title: reporting-api
+status: active
+owner: platform
+summary: Read-only query surface for merchant reporting.
+body: Serves aggregated views from settlement projections. Never queries the write model. Responses are cached for five minutes keyed by merchant and date range.
+depends_on: [CMP-0003]

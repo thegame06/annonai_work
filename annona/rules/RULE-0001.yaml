@@ -1,0 +1,7 @@
+id: RULE-0001
+kind: rule
+title: The Core never depends on an agent protocol
+status: active
+applies_to: [CMP-0001, CMP-0002, CMP-0004]
+summary: No import of an MCP, model or vendor SDK anywhere under packages/core.
+body: No import of an MCP, model or vendor SDK anywhere under packages/core. The boundary checker fails the build on violation.

@@ -1,0 +1,7 @@
+{
+  "name": "@annona/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": { "annona": "./bin/annona.mjs" },
+  "dependencies": { "@annona/core": "0.1.0" }
+}

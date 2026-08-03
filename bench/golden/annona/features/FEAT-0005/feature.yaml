@@ -1,0 +1,8 @@
+id: FEAT-0005
+kind: feature
+title: Merchant reporting
+status: in_progress
+owner: bladimir
+created: 2026-03-01
+summary: Let merchants see settled volume, fees and refunds over a date range.
+body: Reporting reads only from projections. Numbers must reconcile exactly with the settlement batches for the same period.

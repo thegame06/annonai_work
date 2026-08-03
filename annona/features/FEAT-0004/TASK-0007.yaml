@@ -1,0 +1,8 @@
+id: TASK-0007
+kind: task
+title: Record execution traces grouped by session
+status: done
+owner: bladimir
+implements: [REQ-0009, REQ-0011]
+touches: [CMP-0002, CMP-0004]
+summary: Persist one trace record per step with a session id so an execution can be reconstructed.

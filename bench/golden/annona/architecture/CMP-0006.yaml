@@ -1,0 +1,8 @@
+id: CMP-0006
+kind: component
+title: webhook-gateway
+status: active
+owner: platform
+summary: Inbound integration surface receiving acquirer callbacks.
+body: Verifies HMAC signatures, deduplicates by acquirer reference, translates acquirer payloads into domain commands. Unknown event types are stored and skipped, never rejected.
+depends_on: [CMP-0001]

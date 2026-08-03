@@ -1,0 +1,8 @@
+id: REQ-0005
+kind: requirement
+title: Refunds are recorded as compensating ledger entries
+status: accepted
+feature: FEAT-0002
+owner: bladimir
+summary: Refunds never update the original ledger entry.
+body: A refund appends a negative entry referencing the original entry id. The ledger remains append only, which is what makes reconciliation possible.

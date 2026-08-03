@@ -1,0 +1,7 @@
+id: TEST-0008
+kind: test
+title: Expired intent releases the authorization hold
+status: passing
+verifies: [REQ-0017]
+summary: |
+  Regression test: expired intent releases the authorization hold.

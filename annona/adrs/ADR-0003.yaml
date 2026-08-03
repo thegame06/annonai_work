@@ -1,0 +1,9 @@
+id: ADR-0003
+kind: adr
+title: Telemetry is a single append-only file in the runtime
+status: accepted
+subject: telemetry-storage
+owner: bladimir
+decides: [REQ-0007]
+summary: Decision on telemetry-storage.
+body: A table in runtime.db would make telemetry disappear on every compile. A separate directory would add a fourth runtime folder. One appended file survives compile and is still disposable.

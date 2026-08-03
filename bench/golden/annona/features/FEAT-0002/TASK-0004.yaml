@@ -1,0 +1,9 @@
+id: TASK-0004
+kind: task
+title: Validate refund against refundable balance
+status: ready
+owner: bladimir
+tags: [feature]
+implements: [REQ-0004]
+touches: [CMP-0002]
+summary: Add the balance check inside the aggregate so concurrent refunds cannot both pass.

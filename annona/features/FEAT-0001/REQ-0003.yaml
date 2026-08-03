@@ -1,0 +1,8 @@
+id: REQ-0003
+kind: requirement
+title: The MCP surface exposes at most seven tools
+status: accepted
+feature: FEAT-0001
+owner: bladimir
+summary: Every tool is permanent token cost in every agent session.
+body: get_task, get_feature, search, context, compile, check, review. Nothing that writes authoritative knowledge.

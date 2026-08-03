@@ -1,0 +1,8 @@
+id: CMP-0001
+kind: component
+title: payments-api
+status: active
+owner: platform
+summary: .NET 8 minimal API exposing payment intents, refunds and settlement queries to the merchant portal.
+body: Hosts the payment aggregate. Owns idempotency keys, exposes /intents and /refunds. Deployed as a container in AKS behind the gateway. All money values cross the boundary as minor units in a Money DTO.
+depends_on: [CMP-0002, CMP-0004]

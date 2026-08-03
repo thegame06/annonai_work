@@ -1,0 +1,9 @@
+id: TASK-0022
+kind: task
+title: Cache reporting responses for five minutes
+status: ready
+owner: bladimir
+tags: [performance]
+implements: [REQ-0010]
+touches: [CMP-0008]
+summary: Add a keyed cache on merchant and date range to cut repeat query load.

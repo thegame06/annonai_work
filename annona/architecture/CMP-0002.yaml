@@ -1,0 +1,8 @@
+id: CMP-0002
+kind: component
+title: core-execution
+status: active
+owner: bladimir
+summary: Retriever, context compiler, cache.
+body: Turns validated knowledge into a governed context. Owns budget allocation, compression, verdict and the layered render. This is the only module allowed to know about tokens.
+depends_on: [CMP-0001, CMP-0003]

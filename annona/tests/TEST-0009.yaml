@@ -1,0 +1,5 @@
+id: TEST-0009
+kind: test
+title: the benchmark never imports a model SDK
+status: pending
+verifies: [REQ-0012]

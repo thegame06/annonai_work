@@ -1,0 +1,9 @@
+id: TASK-0023
+kind: task
+title: Store unknown acquirer event types instead of rejecting
+status: ready
+owner: bladimir
+tags: [integration]
+implements: [REQ-0008]
+touches: [CMP-0006]
+summary: Unknown types currently return 400 and cause acquirer retries forever.

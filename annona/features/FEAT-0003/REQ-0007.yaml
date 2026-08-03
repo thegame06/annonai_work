@@ -1,0 +1,8 @@
+id: REQ-0007
+kind: requirement
+title: Telemetry stays local
+status: accepted
+feature: FEAT-0003
+owner: bladimir
+summary: No engineering metric leaves the machine.
+body: Appended to a file inside the disposable runtime. No personal data, no identifiers, no network calls, ever.

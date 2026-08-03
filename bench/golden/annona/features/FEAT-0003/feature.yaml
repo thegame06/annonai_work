@@ -1,0 +1,8 @@
+id: FEAT-0003
+kind: feature
+title: Daily settlement
+status: in_progress
+owner: bladimir
+created: 2026-03-01
+summary: Group captured payments into daily settlement batches per merchant.
+body: Batches close at 23:59 in the merchant time zone. A closed batch is immutable; adjustments become entries in the next batch.

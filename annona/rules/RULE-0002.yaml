@@ -1,0 +1,7 @@
+id: RULE-0002
+kind: rule
+title: Knowledge module knows nothing about tokens or agents
+status: active
+applies_to: [CMP-0001]
+summary: The isolation rule.
+body: The isolation rule. It is what lets the knowledge format outlive every AI tool integrated over the next decade.

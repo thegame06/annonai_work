@@ -1,0 +1,5 @@
+id: TEST-0002
+kind: test
+title: MCP tools return the same data as the CLI
+status: passing
+verifies: [REQ-0003, REQ-0004]

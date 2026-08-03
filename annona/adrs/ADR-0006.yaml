@@ -1,0 +1,9 @@
+id: ADR-0006
+kind: adr
+title: The agent benchmark shells out to a configured command
+status: accepted
+subject: agent-benchmark
+owner: bladimir
+decides: [REQ-0012]
+summary: Decision on agent-benchmark.
+body: Binding the harness to a vendor SDK would put model credentials and retry logic inside the tool. A command template keeps every agent interchangeable.

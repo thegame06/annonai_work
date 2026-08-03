@@ -1,0 +1,5 @@
+id: TEST-0003
+kind: test
+title: doctor writes nothing
+status: passing
+verifies: [REQ-0005, REQ-0006]

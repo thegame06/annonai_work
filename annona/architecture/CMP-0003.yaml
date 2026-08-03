@@ -1,0 +1,9 @@
+id: CMP-0003
+kind: component
+title: core-store
+status: active
+owner: bladimir
+summary: KnowledgeStore abstraction with SQLite and memory implementations.
+body: |
+  Internal by decision: publishing it would freeze the graph representation for a third-party store nobody has requested.
+depends_on: []

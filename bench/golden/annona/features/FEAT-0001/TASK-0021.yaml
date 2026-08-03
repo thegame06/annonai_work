@@ -1,0 +1,9 @@
+id: TASK-0021
+kind: task
+title: Split PaymentIntent persistence into its own repository
+status: ready
+owner: bladimir
+tags: [refactor]
+implements: [REQ-0002, REQ-0003]
+touches: [CMP-0003, CMP-0002]
+summary: Domain currently references the Mongo driver; move it behind a repository.

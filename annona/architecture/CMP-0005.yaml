@@ -1,0 +1,8 @@
+id: CMP-0005
+kind: component
+title: cli
+status: active
+owner: bladimir
+summary: Command line interface and the benchmark harness.
+body: Thin serializer over Workspace. Owns the implement wrapper so the Core has no process-spawning capability.
+depends_on: [CMP-0004]

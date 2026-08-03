@@ -1,0 +1,8 @@
+id: FEAT-0005
+kind: feature
+title: Knowledge stays in sync with reality
+status: in_progress
+owner: bladimir
+created: 2026-07-31
+summary: Detect and cheaply repair the drift that appears the moment a task is implemented.
+body: Dogfooding measured 17 manual edits to resync one milestone. The cost is not authoring knowledge, it is correcting it afterwards, which is what gets skipped under deadline pressure.

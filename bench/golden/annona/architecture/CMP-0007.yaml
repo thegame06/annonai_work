@@ -1,0 +1,8 @@
+id: CMP-0007
+kind: component
+title: identity
+status: active
+owner: platform
+summary: Merchant authentication and authorization.
+body: OIDC against Entra ID. Scopes map to merchant roles. Portal receives a short lived access token; refresh happens silently in a worker.
+depends_on: []

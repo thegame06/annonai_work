@@ -1,0 +1,8 @@
+id: TASK-0003
+kind: task
+title: Implement annona doctor
+status: done
+owner: bladimir
+implements: [REQ-0005, REQ-0006]
+touches: [CMP-0002, CMP-0004, CMP-0005]
+summary: Read-only knowledge health report covering orphans, dead rules and decisions, and missing relationships.

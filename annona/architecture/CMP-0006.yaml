@@ -1,0 +1,8 @@
+id: CMP-0006
+kind: component
+title: mcp
+status: active
+owner: bladimir
+summary: MCP adapter exposing Workspace commands as agent tools.
+body: Separate package. The Core does not know MCP exists. Read tools plus nothing that writes authoritative knowledge.
+depends_on: [CMP-0004]

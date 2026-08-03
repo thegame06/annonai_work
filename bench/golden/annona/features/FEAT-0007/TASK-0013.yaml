@@ -1,0 +1,9 @@
+id: TASK-0013
+kind: task
+title: Build the two-step refund confirmation screen
+status: ready
+owner: bladimir
+tags: [react]
+implements: [REQ-0013]
+touches: [CMP-0004]
+summary: Add the confirmation step with explicit amount entry and no optimistic update.

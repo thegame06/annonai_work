@@ -1,0 +1,9 @@
+id: TASK-0017
+kind: task
+title: Expire uncaptured intents after seven days
+status: ready
+owner: bladimir
+tags: [feature]
+implements: [REQ-0017]
+touches: [CMP-0005, CMP-0002]
+summary: Add the expiry job that raises a domain event rather than relying on a TTL index.

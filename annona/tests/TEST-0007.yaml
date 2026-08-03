@@ -1,0 +1,5 @@
+id: TEST-0007
+kind: test
+title: doctor detects stale task status
+status: pending
+verifies: [REQ-0013]
