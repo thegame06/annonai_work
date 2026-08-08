@@ -10,7 +10,11 @@ discovery → brief → knowledge → plan → implement → review → done
                                  └────────────────────┘
 ```
 
-The agent drives it. You confirm the brief, approve the plan, and accept the work.
+The agent drives the Annona part of the loop. You confirm the brief, approve the plan,
+and accept the work. Annona is the engineering memory and deterministic context
+compiler: it preserves durable decisions and requirements, then gives agents or
+external frameworks the smallest reusable context they need. It does not replace
+product, planning, delivery, or issue-tracking workflows.
 
 > **Designed, not yet observed.** The loop is specified in the generated instruction
 > files and the commands behind it are tested, but no external agent has yet completed a
@@ -27,6 +31,27 @@ hand. Compile is incremental — unchanged source does no work.
 
 `annona compile --clean` forces a full rebuild. You need it almost never; it is for when
 you suspect the runtime is wrong, and the runtime is disposable anyway.
+
+## Working with Spec Kit
+
+Spec Kit can own feature shaping while Annona complements it as reusable engineering
+memory for implementation agents. A practical sequence is:
+
+1. Use Spec Kit for `specify`, `plan`, and `tasks` so the product intent, plan, and
+   task breakdown are shaped in that workflow.
+2. Import or register the durable artifacts in Annona as features, requirements,
+   ADRs, rules, components, and tasks. If you use the experimental bridge, run
+   `annona import speckit <path>` and review the generated YAML before treating it
+   as source of truth.
+3. Run `annona context <task>` before implementation planning and again before
+   changing code. That compiled context is what keeps external agents aligned with
+   the recorded engineering intent.
+4. As implementation or review reveals durable knowledge, update Annona with the
+   ADRs, rules, and requirements that future agents should reuse.
+
+This is a complement, not a source-of-truth switch. Spec Kit can remain the place where
+the workflow is organized; Annona stores and compiles the durable knowledge that should
+survive across agents, tools, and future tasks.
 
 ## Working with Git
 
