@@ -72,6 +72,23 @@ test('the instructions describe the full loop', () => {
     assert.match(text, new RegExp(stage, 'i'), `the workflow is missing the ${stage} stage`);
 });
 
+test('the instructions position Annona as reusable context infrastructure', () => {
+  const text = flat(generate());
+  assert.match(text, /engineering memory/i);
+  assert.match(text, /deterministic context compiler/i);
+  assert.match(text, /reusable layer for agents and external frameworks/i);
+  assert.match(text, /not the owner of the whole delivery lifecycle/i);
+});
+
+test('the instructions explain how to complement Spec Kit', () => {
+  const text = flat(generate());
+  assert.match(text, /If the project uses Spec Kit/i);
+  assert.match(text, /Use Spec Kit for `specify`, `plan`, and `tasks`/i);
+  assert.match(text, /Import or record those artifacts in Annona/i);
+  assert.match(text, /Run `annona context <task>` before planning implementation/i);
+  assert.match(text, /Update Annona with ADRs, rules, and requirements discovered/i);
+});
+
 test('the instructions state what COMPLETE does not mean', () => {
   const text = generate();
   // H3 measured that 24.4% of a corpus can vanish with every verdict unchanged.
@@ -106,7 +123,7 @@ test('every command the instructions give is an annona command', () => {
   const commands = [...text.matchAll(/`([a-z][a-z0-9_ .<>=,-]*)`/g)]
     .map((m) => m[1]!.trim().split(' ')[0]!)
     // field names and file names are not commands
-    .filter((c) => !['implements', 'touches', 'missing'].includes(c) && !c.includes('.'));
+    .filter((c) => !['implements', 'touches', 'missing', 'specify', 'plan', 'tasks'].includes(c) && !c.includes('.'));
   assert.ok(commands.length > 0);
   for (const c of new Set(commands))
     assert.equal(c, 'annona', `the instructions tell the agent to run "${c}", which the environment may not provide`);
