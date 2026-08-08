@@ -89,6 +89,10 @@ about engineering; it drives Annona.
 → **[Cookbook](docs/cookbook.md)** — short worked examples
 → **[FAQ](docs/faq.md)**
 
+## Experimental integrations
+
+Annona can import early Spec Kit artifacts as draft knowledge entities. The positioning is: **Spec Kit organizes the process; Annona preserves and compiles the knowledge.** See the [Spec Kit integration guide](docs/spec-kit-integration.md) for the initial mapping and review workflow.
+
 ## How it works
 
 ```

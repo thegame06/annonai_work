@@ -9,7 +9,7 @@
     "node": ">=22.18"
   },
   "scripts": {
-    "test": "node --test packages/core/test/*.test.ts packages/mcp/test/*.test.ts",
+    "test": "node --test packages/core/test/*.test.ts packages/cli/test/*.test.ts packages/mcp/test/*.test.ts",
     "check:boundaries": "node tools/check-boundaries.mjs",
     "check:api": "node tools/check-api.mjs",
     "check:api:update": "node tools/check-api.mjs --update",
