@@ -6,6 +6,7 @@ import { metrics } from './metrics.ts';
 import { replay } from './replay.ts';
 import { done } from './done.ts';
 import { benchAgent } from './agentbench.ts';
+import { importSpecKit } from './speckit.ts';
 
 /** Frozen: 0 success, 1 error, 2 usage, 3 halt / incomplete knowledge. */
 const EXIT = { ok: 0, error: 1, usage: 2, halt: 3 } as const;
@@ -22,6 +23,7 @@ const USAGE = `annona <command>
   done <task>          mark a task complete and resync knowledge
   replay [session]     reconstruct an execution timeline
   metrics              dogfooding metrics from local telemetry
+  import speckit <path> experimental Spec Kit artifact import
   bench context        run the golden dataset benchmark
   bench agent          compare repo-only against Annona context
 
@@ -61,6 +63,12 @@ export const main = async (argv: string[]): Promise<number> => {
 
   if (!cmd || cmd === 'help') { console.log(USAGE); return cmd ? EXIT.ok : EXIT.usage; }
   if (cmd === 'init') return init(root, json);
+  if (cmd === 'import') {
+    if (args[1] !== 'speckit' || !args[2]) { console.error('usage: annona import speckit <path>'); return EXIT.usage; }
+    const r = importSpecKit(root, args[2]);
+    out(json, `imported ${r.entities.length} entities from ${r.files.length} Spec Kit files`, r);
+    return EXIT.ok;
+  }
   if (cmd === 'bench') {
     if (args[1] !== 'context' && args[1] !== 'agent') { console.error('usage: annona bench context|agent'); return EXIT.usage; }
     const budgetArg = argv.find((a) => a.startsWith('--budget='));
